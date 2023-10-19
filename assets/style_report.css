@@ -1,0 +1,156 @@
+/* Scrolling menu */
+    .hide {
+        display: none;
+    }
+    /* Test result table layout */
+        .test_result_table {
+            margin-left: 75px;
+        }
+        .test_result_table table {
+            width: 700px;
+        }
+        .test_result:nth-child(even) {
+            background-color: #F5F5F5;
+        }
+
+        #scrolling_menu_html .session_title {
+            margin-left: 30px;
+        }
+
+    /* Coloring of tables */
+        .bg_dark_grey {
+            background-color: #C2C2C2;
+        }
+        .bg_intermediate_grey {
+            background-color: #CFCACA;
+        }
+        .bg_light_grey {
+            background-color: #DADADA;
+        }
+        .is_available {
+            background-color: #EFEFEF;
+        }
+
+    /* Separations of FEBE */
+        .out {
+            border-left: 3px solid
+        }
+        .moc {
+            border-top: 3px solid
+        }
+
+    /* Coloring of key words */
+        .fail {
+            color: red;
+        }
+        .pass {
+            color: green;
+        }
+
+    /* To hide the chars over 200 in the description of the test */
+        .more_text {
+            display: none;
+        }
+
+    /* Size of the case of the FEBE table */
+    .febe_table table tr td table {
+        min-height: 92.6667px;
+    }
+
+/* Machine summary layout */
+    .row {
+        margin-left:-5px;
+        margin-right:-5px;
+    }
+
+    .column {
+        float: left;
+        padding: 10px;
+    }
+
+    /* Asking the next elements of the HTML to be under the table instead of on the side */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+    .machine_summary th, .machine_summary td {
+        padding: 6px;
+    }
+
+    /* Asking the tables inside the column div to occupy 100% of the space given */
+        #Device table {
+            width: 100%;
+        }
+    /* Regulation of the width of the column in the tables */
+        #Device table td:first-child {
+            width: 120px;
+        }
+        #Device table td:last-child {
+            width: 140px;
+        }
+
+        #Cards table {
+            width: 100%;
+        }
+        #Cards table td:first-child {
+            width: 80px;
+        }
+        #Cards table td:last-child {
+            width: 20px;
+        }
+
+        #Stats table {
+            width: 100%;
+        }
+        #Stats table td:first-child {
+            width: 120px;
+        }
+        #Stats table td:last-child {
+            width: 55px;
+        }
+
+        #Var table {
+            width: 100%;
+        }
+        #Var table td:first-child {
+            width: 80px;
+        }
+        #Var table td:last-child {
+            width: 70px;
+        }
+
+/* Log summary */
+    .category {
+        font-weight: bold;
+    }
+    #log_summary {
+        line-height: 30px;
+        font-size: 20px;
+    }
+    #log_summary span {
+        margin-left: 80px;
+        font-size: 21px;
+    }
+
+
+/* tool bar */
+    #tool_bar {
+        position: sticky;
+        overflow: auto;
+        text-align: center;
+        background : #9E9E9E;
+
+        /* position of the box (top has to be set to a value)*/
+        top: 10px; left: 100%;
+
+        /* size of the box */
+        width: fit-content; min-width: 220px;
+        height: auto; max-height: 49vw
+    }
+
+    .tool_bar_button {
+        /* margin-top | margin-right | margin-bottom | margin-left */
+        margin: 15px auto 10px auto;
+    }

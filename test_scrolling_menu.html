@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Machine sessions 4118-4118</title>
+  <script language="JavaScript" type="text/JavaScript" src="assets/scrolling_menu_report.js"></script>
+  <link rel="stylesheet" href="assets/style_report.css"/>
+</head>
+<body onLoad="init()">
+  <div id="tool_bar">
+    <button class="tool_bar_button" id="collapse_all" onClick="return(collapse_all())">Collapse&nbsp;all</button>
+    <br>
+    <button class="tool_bar_button" id="extend_all" onClick="return(extend_all())">Extend&nbsp;all</button>
+  </div>
+  <h1 align="center">Machine sessions 4118-4118</h1>
+  <hr>
+  <h2>Log summary :</h2>
+  <p id="log_summary">
+    <span class="category">JSON</span> : my.json<span class="category">From</span> : Folder_name<span class="category">Generated at</span> : 09:31:14 19/10/2023
+  </p>
+  <hr>
+  <h2>Machine summary :</h2>
+  <div class="row">
+    <div class="column" id="Device">
+      <table class="machine_summary">
+        <tr>
+          <th colspan="2" class="bg_dark_grey">Device</th>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">Dev :</td>
+          <td class="bg_light_grey">-</td>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">DevMacAddr :</td>
+          <td class="bg_light_grey">-</td>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">DevPlatform :</td>
+          <td class="bg_light_grey">-</td>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">DevRef :</td>
+          <td class="bg_light_grey">-</td>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">DevSerial :</td>
+          <td class="bg_light_grey">-</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column" id="Cards">
+      <table class="machine_summary">
+        <tr>
+          <th colspan="2" class="bg_dark_grey">Cards</th>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">FRAME :</td>
+          <td class="bg_light_grey">-</td>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">IN :</td>
+          <td class="bg_light_grey">-</td>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">OUT :</td>
+          <td class="bg_light_grey">-</td>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">PROC :</td>
+          <td class="bg_light_grey">-</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column" id="Stats">
+      <table class="machine_summary">
+        <tr>
+          <th colspan="2" class="bg_dark_grey">Stats</th>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">Running_cycles :</td>
+          <td class="bg_light_grey">-</td>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">Running_time :</td>
+          <td class="bg_light_grey">-</td>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">Total_cycles :</td>
+          <td class="bg_light_grey">-</td>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">Total_time :</td>
+          <td class="bg_light_grey">-</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column" id="Var">
+      <table class="machine_summary">
+        <tr>
+          <th colspan="2" class="bg_dark_grey">Var</th>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">Firmware :</td>
+          <td class="bg_light_grey">-</td>
+        </tr>
+        <tr>
+          <td class="bg_light_grey">VerVar :</td>
+          <td class="bg_light_grey">0</td>
+        </tr>
+      </table>
+    </div>
+  <!end column>
+  </div>
+
+  <br>
+  <hr>
+
+  <div id="scrolling_menu_html">
+      <table class="session_title" onClick="return(show_scrolling_menu(0))">
+        <tr>
+          <td>
+            <button class="button_session_title">&#x25B6;</button>&nbsp;&nbsp;&nbsp;&nbsp;
+          </td>
+          <td>
+            <h2>
+              <a href="#">Session number 4118 of 13:52 18/10/2023(<span class="fail">Failed</span>)</a>
+            </h2>
+          </td>
+        </tr>
+      </table>
+    <div class="row hide">
+      <div class="column test_result_table">
+        <table cellpadding="6">
+          <tr>
+            <th colspan="3" class="bg_dark_grey" align="center">Test summary</th>
+          </tr>
+          <tr class="bg_light_grey">
+            <th>Test name</th>
+            <th>Description</th>
+            <th>Status</th>
+          </tr>
+          <tr class="test_result">
+            <td>device_outdated</td>
+            <td>RAS</td>
+            <td class="pass">PASSED</td>
+          </tr>
+          <tr class="test_result">
+            <td>shutdown</td>
+            <td>Device didn't shutdown properly</td>
+            <td class="fail">FAILED</td>
+          </tr>
+          <tr class="test_result">
+            <td>card_error</td>
+            <td>RAS</td>
+            <td class="pass">PASSED</td>
+          </tr>
+          <tr class="test_result">
+            <td>fan_case_speed</td>
+            <td>RAS</td>
+            <td class="pass">PASSED</td>
+          </tr>
+          <tr class="test_result">
+            <td>fan_comp_speed</td>
+            <td>RAS</td>
+            <td class="pass">PASSED</td>
+          </tr>
+          <tr class="test_result">
+            <td>temp_card_sensor</td>
+            <td>RAS</td>
+            <td class="pass">PASSED</td>
+          </tr>
+          <tr class="test_result">
+            <td>updater</td>
+            <td>RAS</td>
+            <td class="pass">PASSED</td>
+          </tr>
+        </table>
+      </div>
+      <div class="column febe_table">
+        <table cellpadding="6">
+          <tr>
+            <th colspan="3" class="bg_dark_grey" align="center">Chassis (5U)</th>
+          </tr>
+          <tr class="bg_light_grey">
+            <th colspan="2">IN</th>
+            <th>OUT</th>
+          </tr>
+          <tr>
+            <td class="is_available">
+              <table>
+                <tr>
+                  <td align="center">FE_HDMI</td>
+                </tr>
+                <tr>
+                  <td>REV&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>DATECODE&nbsp;:&nbsp;-</td>
+                </tr>
+              </table>
+            </td>
+              <td class="is_available">
+                <table>
+                  <tr>
+                    <td align="center">FE_SDI</td>
+                  </tr>
+                  <tr>
+                    <td>REV&nbsp;:&nbsp;-</td>
+                  </tr>
+                  <tr>
+                    <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                  </tr>
+                  <tr>
+                    <td>DATECODE&nbsp;:&nbsp;-</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="out is_available">
+                <table>
+                  <tr>
+                    <td align="center">BE_HDMI</td>
+                  </tr>
+                  <tr>
+                    <td>REV&nbsp;:&nbsp;-</td>
+                  </tr>
+                  <tr>
+                    <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                  </tr>
+                  <tr>
+                    <td>DATECODE&nbsp;:&nbsp;-</td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="bg_intermediate_grey">
+              <table>
+              </table>
+            </td>
+            <td class="bg_intermediate_grey">
+              <table>
+              </table>
+            </td>
+            <td class="out is_available">
+              <table>
+                <tr>
+                  <td align="center">BE_DP</td>
+                </tr>
+                <tr>
+                  <td>REV&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>DATECODE&nbsp;:&nbsp;-</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="bg_intermediate_grey">
+              <table>
+              </table>
+            </td>
+            <td class="bg_intermediate_grey">
+              <table>
+              </table>
+            </td>
+            <td class="out is_available">
+              <table>
+                <tr>
+                  <td align="center">BE_SDI</td>
+                </tr>
+                <tr>
+                  <td>REV&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>DATECODE&nbsp;:&nbsp;-</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="moc is_available">
+              <table>
+                <tr>
+                  <td align="center">MOC_HDMI</td>
+                </tr>
+                <tr>
+                  <td>REV&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>DATECODE&nbsp;:&nbsp;-</td>
+                </tr>
+              </table>
+            </td>
+            <td class="moc is_available">
+              <table>
+                <tr>
+                  <td align="center">MOC_SYNC</td>
+                </tr>
+                <tr>
+                  <td>REV&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>DATECODE&nbsp;:&nbsp;-</td>
+                </tr>
+              </table>
+            </td>
+            <td class="out bg_intermediate_grey">
+              <table>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="bg_intermediate_grey">
+              <table>
+              </table>
+            </td>
+            <td class="bg_intermediate_grey">
+              <table>
+              </table>
+            </td>
+            <td class="out is_available">
+              <table>
+                <tr>
+                  <td align="center">BE_EXT_QSFP</td>
+                </tr>
+                <tr>
+                  <td>REV&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>DATECODE&nbsp;:&nbsp;-</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="column febe_table">
+        <table cellpadding="6">
+          <tr>
+            <th colspan="3" class="bg_dark_grey" align="center">Chassis (5U)</th>
+          </tr>
+          <tr class="bg_light_grey">
+            <th colspan="2">IN</th>
+            <th>OUT</th>
+          </tr>
+          <tr>
+            <td class="is_available">
+              <table>
+                <tr>
+                  <td align="center">FE_DP</td>
+                </tr>
+                <tr>
+                  <td>REV&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>DATECODE&nbsp;:&nbsp;-</td>
+                </tr>
+              </table>
+            </td>
+            <td class="is_available">
+              <table>
+                <tr>
+                  <td align="center">FE_IP_SDI</td>
+                </tr>
+                <tr>
+                  <td>REV&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>DATECODE&nbsp;:&nbsp;-</td>
+                </tr>
+              </table>
+            </td>
+            <td class="out is_available">
+              <table>
+                <tr>
+                  <td align="center">BE_HDMI</td>
+                </tr>
+                <tr>
+                  <td>REV&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>DATECODE&nbsp;:&nbsp;-</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="bg_intermediate_grey">
+              <table>
+              </table>
+            </td>
+            <td class="bg_intermediate_grey">
+              <table>
+              </table>
+            </td>
+            <td class="out is_available">
+              <table>
+              <tr>
+                <td align="center">BE_HDMI</td>
+              </tr>
+              <tr>
+                <td>REV&nbsp;:&nbsp;-</td>
+              </tr>
+              <tr>
+                <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+              </tr>
+              <tr>
+                <td>DATECODE&nbsp;:&nbsp;-</td>
+              </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="bg_intermediate_grey">
+              <table>
+              </table>
+            </td>
+            <td class="bg_intermediate_grey">
+              <table>
+              </table>
+            </td>
+            <td class="out is_available">
+              <table>
+                <tr>
+                  <td align="center">BE_SDI</td>
+                </tr>
+                <tr>
+                  <td>REV&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>DATECODE&nbsp;:&nbsp;-</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="moc is_available">
+              <table>
+                <tr>
+                  <td align="center">MOC_HDMI</td>
+                </tr>
+                <tr>
+                  <td>REV&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>DATECODE&nbsp;:&nbsp;-</td>
+                </tr>
+              </table>
+            </td>
+            <td class="moc is_available">
+              <table>
+                <tr>
+                  <td align="center">MOC_SYNC</td>
+                </tr>
+                <tr>
+                  <td>REV&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>DATECODE&nbsp;:&nbsp;-</td>
+                </tr>
+              </table>
+            </td>
+            <td class="out bg_intermediate_grey">
+              <table>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="bg_intermediate_grey">
+              <table>
+              </table>
+            </td>
+            <td class="bg_intermediate_grey">
+              <table>
+              </table>
+            </td>
+            <td class="out is_available">
+              <table>
+                <tr>
+                  <td align="center">BE_EXT_QSFP</td>
+                </tr>
+                <tr>
+                  <td>REV&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>SERIAL_NUM&nbsp;:&nbsp;-</td>
+                </tr>
+                <tr>
+                  <td>DATECODE&nbsp;:&nbsp;-</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  <!end scrolling_menu>
+  </div>
+</body>
